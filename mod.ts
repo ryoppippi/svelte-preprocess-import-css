@@ -1,30 +1,88 @@
+import process from "node:process";
 import * as path from "pathe";
 import * as fs from "node:fs/promises";
 import MagicString, { Bundle } from "magic-string";
 import type { PreprocessorGroup } from "svelte/compiler";
+import type { Config as SvelteKitConfig } from "@sveltejs/kit";
+import type { UserConfig as ViteConfig } from "vite";
+import { loadConfig } from "unconfig";
+
+async function loadAliases() {
+  const { config } = await loadConfig({
+    merge: true,
+    sources: [
+      {
+        files: "svelte.config",
+        rewrite: (_config) => {
+          const config = _config as SvelteKitConfig;
+          return { alias: config?.kit?.alias };
+        },
+      },
+      {
+        files: "vite.config",
+        rewrite: (_config) => {
+          const config = _config as ViteConfig;
+          return { alias: config?.resolve?.alias };
+        },
+      },
+    ],
+  });
+  return config?.alias ?? {};
+}
+
+/**
+ * Resolve paths
+ */
+async function getAbsPath(
+  { filename, file }: { filename?: string; file: string },
+) {
+  const aliases = await loadAliases();
+  const dirname = filename ? path.dirname(filename) : process.cwd();
+
+  if (file.startsWith("/")) {
+    return file;
+  }
+
+  if (file.startsWith("./") || file.startsWith("../")) {
+    return path.resolve(dirname, file);
+  }
+
+  for (const [alias, aliasPath] of Object.entries(aliases)) {
+    if (file.startsWith(alias)) {
+      const s = new MagicString(file);
+      s.overwrite(0, alias.length, aliasPath);
+      return path.resolve(s.toString());
+    }
+  }
+
+  return file;
+}
+
+/**
+ * Make `@import "./whatever.css" scoped;` statements import CSS into the component's CSS scope
+ */
+function matchAllImports(str: string) {
+  const globalRegex = /@import\s+(".*"|'.*')\s+scoped\s*;/g;
+  const matches = [];
+  let match: ReturnType<typeof globalRegex.exec>;
+  // eslint-disable-next-line no-cond-assign
+  while ((match = globalRegex.exec(str)) !== null) {
+    const start = match.index;
+    const end = start + match[0].length;
+    matches.push({
+      start,
+      end,
+      file: match[1].substring(1, match[1].length - 1),
+    });
+  }
+  return matches;
+}
 
 /**
  * Make `@import "./whatever.css" scoped;` statements import CSS into the component's CSS scope
  * originally from https://github.com/sveltejs/svelte/issues/7125#issuecomment-1528965643
  */
 export function importCSSPreprocess(): PreprocessorGroup {
-  function matchAllImports(str: string) {
-    const globalRegex = /@import\s+(".*"|'.*')\s+scoped\s*;/g;
-    const matches = [];
-    let match: ReturnType<typeof globalRegex.exec>;
-    // eslint-disable-next-line no-cond-assign
-    while ((match = globalRegex.exec(str)) !== null) {
-      const start = match.index;
-      const end = start + match[0].length;
-      matches.push({
-        start,
-        end,
-        file: match[1].substring(1, match[1].length - 1),
-      });
-    }
-    return matches;
-  }
-
   return {
     style: async function ({ content, filename }) {
       const imports = matchAllImports(content);
@@ -42,7 +100,7 @@ export function importCSSPreprocess(): PreprocessorGroup {
           } else {
             out.push(remove(0, end));
           }
-          const absPath = path.join(path.dirname(filename ?? ""), file);
+          const absPath = await getAbsPath({ filename, file });
           deps.push(absPath);
           const text = (await fs.readFile(absPath)).toString();
           out.push(new MagicString(text, { filename: absPath }));
