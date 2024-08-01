@@ -1,3 +1,4 @@
+import process from "node:process";
 import * as path from "pathe";
 import * as fs from "node:fs/promises";
 import MagicString, { Bundle } from "magic-string";
@@ -7,7 +8,7 @@ import type { UserConfig as ViteConfig } from "vite";
 import { loadConfig } from "unconfig";
 
 async function loadAliases() {
-  const { config: { alias } } = await loadConfig({
+  const { config } = await loadConfig({
     merge: true,
     sources: [
       {
@@ -26,7 +27,35 @@ async function loadAliases() {
       },
     ],
   });
-  return alias;
+  return config?.alias ?? {};
+}
+
+/**
+ * Resolve paths
+ */
+async function getAbsPath(
+  { filename, file }: { filename?: string; file: string },
+) {
+  const aliases = await loadAliases();
+  const dirname = filename ? path.dirname(filename) : process.cwd();
+
+  if (file.startsWith("/")) {
+    return file;
+  }
+
+  if (file.startsWith("./") || file.startsWith("../")) {
+    return path.resolve(dirname, file);
+  }
+
+  for (const [alias, aliasPath] of Object.entries(aliases)) {
+    if (file.startsWith(alias)) {
+      const s = new MagicString(file);
+      s.overwrite(0, alias.length, aliasPath);
+      return path.resolve(s.toString());
+    }
+  }
+
+  return file;
 }
 
 /**
@@ -71,7 +100,7 @@ export function importCSSPreprocess(): PreprocessorGroup {
           } else {
             out.push(remove(0, end));
           }
-          const absPath = path.join(path.dirname(filename ?? ""), file);
+          const absPath = await getAbsPath({ filename, file });
           deps.push(absPath);
           const text = (await fs.readFile(absPath)).toString();
           out.push(new MagicString(text, { filename: absPath }));
