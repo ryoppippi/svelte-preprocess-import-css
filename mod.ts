@@ -2,6 +2,8 @@ import process from "node:process";
 import * as path from "pathe";
 import * as fs from "node:fs/promises";
 import MagicString, { Bundle } from "magic-string";
+import queryString from "query-string";
+import cssSelectorExtract from "css-selector-extract";
 import type { PreprocessorGroup } from "svelte/compiler";
 import type { Config as SvelteKitConfig } from "@sveltejs/kit";
 import type { UserConfig as ViteConfig } from "vite";
@@ -72,10 +74,15 @@ function matchAllImports(str: string) {
   while ((match = globalRegex.exec(str)) !== null) {
     const start = match.index;
     const end = start + match[0].length;
+    const {
+      url: file,
+      query,
+    } = queryString.parseUrl(match[1].substring(1, match[1].length - 1));
     matches.push({
       start,
       end,
-      file: match[1].substring(1, match[1].length - 1),
+      file,
+      query,
     });
   }
   return matches;
@@ -96,7 +103,7 @@ export function importCSSPreprocess(): PreprocessorGroup {
           state.clone().remove(start, end);
         const out = [];
         const deps = [];
-        for (const { start, end, file } of imports.reverse()) {
+        for (const { start, end, file, query } of imports.reverse()) {
           // Right
           if (lastStart != null) {
             out.push(remove(lastStart, content.length).remove(0, end));
@@ -105,8 +112,22 @@ export function importCSSPreprocess(): PreprocessorGroup {
           }
           const absPath = await getAbsPath({ filename, file });
           deps.push(absPath);
-          const text = (await fs.readFile(absPath)).toString();
-          out.push(new MagicString(text, { filename: absPath }));
+
+          const cssText = (await fs.readFile(absPath)).toString();
+
+          let replaceText: string | undefined = undefined;
+
+          if (Object.keys(query).length > 0) {
+            const selectedCss: string = await cssSelectorExtract.process({
+              css: cssText,
+              filters: Object.keys(query),
+            });
+            replaceText = selectedCss;
+          } else {
+            replaceText = cssText;
+          }
+
+          out.push(new MagicString(replaceText, { filename: absPath }));
           lastStart = start;
         }
 
