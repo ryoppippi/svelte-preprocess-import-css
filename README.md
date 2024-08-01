@@ -44,5 +44,44 @@ contents of b.css will be here
 </style>
 ```
 
+### Select Style Rules by Query Selector
+
+You can select style rules by query selector.
+
+For example, the following CSS and Svelte:
+
+
+```css
+/* a.css */
+
+div { color: red; }
+
+.message { color: blue; }
+```
+
+```svelte
+<div> hello </div>
+<p class="message"> world </p>
+
+<style>
+@import "./a.css?.message" scoped;
+
+div { color: green; }
+</style>
+```
+
+will get converted into:
+
+```svelte
+<div> hello </div>
+<p class="message"> world </p>
+
+<style>
+.message { color: blue; }
+
+div { color: green; }
+</style>
+```
+
 ## License
 [MIT](./LICENSE)
