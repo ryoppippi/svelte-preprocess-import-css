@@ -39,7 +39,7 @@ async function getAbsPath(
   const aliases = await loadAliases();
   const dirname = filename ? path.dirname(filename) : process.cwd();
 
-  if (file.startsWith("/")) {
+  if (path.isAbsolute(file)) {
     return file;
   }
 
@@ -47,7 +47,8 @@ async function getAbsPath(
     return path.resolve(dirname, file);
   }
 
-  for (const [alias, aliasPath] of Object.entries(aliases)) {
+  for (const [_alias, aliasPath] of Object.entries(aliases)) {
+    const alias = _alias.endsWith("/") ? _alias : `${_alias}/`;
     if (file.startsWith(alias)) {
       const s = new MagicString(file);
       s.overwrite(0, alias.length, aliasPath);
