@@ -1,5 +1,8 @@
 # svelte-preprocess-import-css
 
+[![JSR](https://jsr.io/badges/@ryoppippi/svelte-preprocess-import-css)](https://jsr.io/@ryoppippi/svelte-preprocess-import-css)
+[![JSR](https://jsr.io/badges/@ryoppippi/svelte-preprocess-import-css/score)](https://jsr.io/@ryoppippi/svelte-preprocess-import-css)
+
 This is a Svelte preprocessor that allows you to import scoped CSS files into your Svelte components.
 Based on [this issue](https://github.com/sveltejs/svelte/issues/7125#issuecomment-1528965643)
 
