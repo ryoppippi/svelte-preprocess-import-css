@@ -1,8 +1,22 @@
-import { test } from "@cross/test";
-import { assertEquals } from "@std/assert";
+import { join } from "node:path";
+import { assertSnapshot } from "@std/testing/snapshot";
+import { preprocess } from "svelte/compiler";
+import { importCSSPreprocess } from "./mod.ts";
 
-import { add } from "./mod.ts";
+Deno.test(
+  "example svelte main",
+  async function (t) {
+    const filename = join(
+      import.meta.dirname as string,
+      "./test_project/Main.svelte",
+    );
+    const source = Deno.readTextFileSync(filename);
+    const { code } = await preprocess(
+      source,
+      [importCSSPreprocess()],
+      { filename },
+    );
 
-test("dummy", () => {
-  assertEquals(add(1, 2), 3);
-});
+    await assertSnapshot(t, code);
+  },
+);
