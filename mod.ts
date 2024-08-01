@@ -118,10 +118,16 @@ export function importCSSPreprocess(): PreprocessorGroup {
           let replaceText: string | undefined = undefined;
 
           if (Object.keys(query).length > 0) {
+            const filters = Object.entries(query).map(([key, value]) => ({
+              selector: key,
+              replacement: value ?? undefined,
+            }));
+
             const selectedCss: string = await cssSelectorExtract.process({
               css: cssText,
-              filters: Object.keys(query),
+              filters,
             });
+
             replaceText = selectedCss;
           } else {
             replaceText = cssText;
