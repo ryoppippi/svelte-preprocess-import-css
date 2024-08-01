@@ -1,4 +1,4 @@
-# svelte-preprocess-import-scoped-css
+# svelte-preprocess-import-css
 
 This is a Svelte preprocessor that allows you to import scoped CSS files into your Svelte components.
 Based on [this issue](https://github.com/sveltejs/svelte/issues/7125#issuecomment-1528965643)
@@ -8,7 +8,7 @@ Based on [this issue](https://github.com/sveltejs/svelte/issues/7125#issuecommen
 You can add it to your `svelte.config.js`, then add it to the preprocessor list:
 
 ```js
-import { importCSSPreprocess } from '@ryoppippi/svelte-preprocess-import-scoped-css';
+import { importCSSPreprocess } from '@ryoppippi/svelte-preprocess-import-css';
 export default {
   preprocess: [
     importCSSPreprocess(), // <--

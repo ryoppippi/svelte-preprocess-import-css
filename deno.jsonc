@@ -1,5 +1,5 @@
 {
-  "name": "@ryoppippi/svelte-preprocess-import-scoped-css",
+  "name": "@ryoppippi/svelte-preprocess-import-css",
   "version": "0.0.0",
   "tasks": {
     "dev": "deno run --watch mod.ts",
