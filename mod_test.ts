@@ -34,3 +34,11 @@ Deno.test(
     await assertSnapshot(t, code);
   },
 );
+
+Deno.test(
+  "example svelte rename",
+  async function (t) {
+    const code = await load("./test_project/Rename.svelte");
+    await assertSnapshot(t, code);
+  },
+);
