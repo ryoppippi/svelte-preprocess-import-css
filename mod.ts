@@ -31,26 +31,29 @@ async function loadAliases() {
 
 /**
  * Make `@import "./whatever.css" scoped;` statements import CSS into the component's CSS scope
+ */
+function matchAllImports(str: string) {
+  const globalRegex = /@import\s+(".*"|'.*')\s+scoped\s*;/g;
+  const matches = [];
+  let match: ReturnType<typeof globalRegex.exec>;
+  // eslint-disable-next-line no-cond-assign
+  while ((match = globalRegex.exec(str)) !== null) {
+    const start = match.index;
+    const end = start + match[0].length;
+    matches.push({
+      start,
+      end,
+      file: match[1].substring(1, match[1].length - 1),
+    });
+  }
+  return matches;
+}
+
+/**
+ * Make `@import "./whatever.css" scoped;` statements import CSS into the component's CSS scope
  * originally from https://github.com/sveltejs/svelte/issues/7125#issuecomment-1528965643
  */
 export function importCSSPreprocess(): PreprocessorGroup {
-  function matchAllImports(str: string) {
-    const globalRegex = /@import\s+(".*"|'.*')\s+scoped\s*;/g;
-    const matches = [];
-    let match: ReturnType<typeof globalRegex.exec>;
-    // eslint-disable-next-line no-cond-assign
-    while ((match = globalRegex.exec(str)) !== null) {
-      const start = match.index;
-      const end = start + match[0].length;
-      matches.push({
-        start,
-        end,
-        file: match[1].substring(1, match[1].length - 1),
-      });
-    }
-    return matches;
-  }
-
   return {
     style: async function ({ content, filename }) {
       const imports = matchAllImports(content);
