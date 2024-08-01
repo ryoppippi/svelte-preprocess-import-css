@@ -2,6 +2,32 @@ import * as path from "pathe";
 import * as fs from "node:fs/promises";
 import MagicString, { Bundle } from "magic-string";
 import type { PreprocessorGroup } from "svelte/compiler";
+import type { Config as SvelteKitConfig } from "@sveltejs/kit";
+import type { UserConfig as ViteConfig } from "vite";
+import { loadConfig } from "unconfig";
+
+async function loadAliases() {
+  const { config: { alias } } = await loadConfig({
+    merge: true,
+    sources: [
+      {
+        files: "svelte.config",
+        rewrite: (_config) => {
+          const config = _config as SvelteKitConfig;
+          return { alias: config?.kit?.alias };
+        },
+      },
+      {
+        files: "vite.config",
+        rewrite: (_config) => {
+          const config = _config as ViteConfig;
+          return { alias: config?.resolve?.alias };
+        },
+      },
+    ],
+  });
+  return alias;
+}
 
 /**
  * Make `@import "./whatever.css" scoped;` statements import CSS into the component's CSS scope
