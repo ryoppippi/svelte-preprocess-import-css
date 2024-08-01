@@ -83,5 +83,41 @@ div { color: green; }
 </style>
 ```
 
+### Rename Style Rules by Query Selector
+
+You can rename style rules by query selector.
+
+For example, the following CSS and Svelte:
+
+```css
+/* a.css */
+
+div { color: red; }
+
+.m0 { color: blue; }
+```
+
+```svelte
+<p class="m1"> world </p>
+
+<style>
+@import "./a.css?.m0=.m1" scoped;
+
+div { color: green; }
+</style>
+```
+
+will get converted into:
+
+```svelte
+<p class="m1"> world </p>
+
+<style>
+.m1 { color: blue; }
+
+div { color: green; }
+</style>
+```
+
 ## License
 [MIT](./LICENSE)
