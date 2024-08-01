@@ -24,7 +24,7 @@ Now you can use `@import "./whatever.css" scoped;`.
 
 For example, the following CSS:
 
-```html
+```svelte
 <style>
 @import "./a.css" scoped;
 @import "./b.css" scoped;
@@ -35,7 +35,7 @@ For example, the following CSS:
 
 will get converted into:
 
-```html
+```svelte
 <style>
 contents of a.css will be here
 contents of b.css will be here
