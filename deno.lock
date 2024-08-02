@@ -5,10 +5,11 @@
       "jsr:@cross/runtime@^1.0.0": "jsr:@cross/runtime@1.0.0",
       "jsr:@cross/test@^0.0.9": "jsr:@cross/test@0.0.9",
       "jsr:@std/assert@1.0.0-rc.2": "jsr:@std/assert@1.0.0-rc.2",
-      "jsr:@std/assert@^0.226.0": "jsr:@std/assert@0.226.0",
+      "jsr:@std/assert@^1.0.0": "jsr:@std/assert@1.0.1",
       "jsr:@std/fmt@^0.225.4": "jsr:@std/fmt@0.225.6",
       "jsr:@std/fs@^1.0.0-rc.1": "jsr:@std/fs@1.0.0-rc.5",
       "jsr:@std/internal@^1.0.0": "jsr:@std/internal@1.0.0",
+      "jsr:@std/internal@^1.0.1": "jsr:@std/internal@1.0.1",
       "jsr:@std/path@1.0.0-rc.2": "jsr:@std/path@1.0.0-rc.2",
       "jsr:@std/path@^1.0.0": "jsr:@std/path@1.0.0",
       "jsr:@std/testing@0.225.3": "jsr:@std/testing@0.225.3",
@@ -35,14 +36,14 @@
           "jsr:@cross/runtime@^1.0.0"
         ]
       },
-      "@std/assert@0.226.0": {
-        "integrity": "0dfb5f7c7723c18cec118e080fec76ce15b4c31154b15ad2bd74822603ef75b3",
-        "dependencies": [
-          "jsr:@std/internal@^1.0.0"
-        ]
-      },
       "@std/assert@1.0.0-rc.2": {
         "integrity": "0484eab1d76b55fca1c3beaff485a274e67dd3b9f065edcbe70030dfc0b964d3"
+      },
+      "@std/assert@1.0.1": {
+        "integrity": "13590ef8e5854f59e4ad252fd987e83239a1bf1f16cb9c69c1d123ebb807a75b",
+        "dependencies": [
+          "jsr:@std/internal@^1.0.1"
+        ]
       },
       "@std/fmt@0.225.6": {
         "integrity": "aba6aea27f66813cecfd9484e074a9e9845782ab0685c030e453a8a70b37afc8"
@@ -55,6 +56,9 @@
       },
       "@std/internal@1.0.0": {
         "integrity": "ac6a6dfebf838582c4b4f61a6907374e27e05bedb6ce276e0f1608fe84e7cd9a"
+      },
+      "@std/internal@1.0.1": {
+        "integrity": "6f8c7544d06a11dd256c8d6ba54b11ed870aac6c5aeafff499892662c57673e6"
       },
       "@std/path@1.0.0": {
         "integrity": "77fcb858b6e38777d1154df0f02245ba0b07e2c40ca3c0eec57c9233188c2d21"
@@ -385,7 +389,7 @@
           "magic-string": "magic-string@0.30.11",
           "mrmime": "mrmime@2.0.0",
           "sade": "sade@1.8.1",
-          "set-cookie-parser": "set-cookie-parser@2.6.0",
+          "set-cookie-parser": "set-cookie-parser@2.7.0",
           "sirv": "sirv@2.0.4",
           "svelte": "svelte@4.2.18",
           "tiny-glob": "tiny-glob@0.2.9",
@@ -1206,8 +1210,8 @@
         "integrity": "sha512-FNAIBWCx9qcRhoHcgcJ0gvU7SN1lYU2ZXuSfl04bSC5OpvDHFyJCjdNHomPXxjQlCBU67YW64PzY7/VIEH7F2w==",
         "dependencies": {}
       },
-      "set-cookie-parser@2.6.0": {
-        "integrity": "sha512-RVnVQxTXuerk653XfuliOxBP81Sf0+qfQE73LIYKcyMYHG94AuH0kgrQpRDuTZnSmjpysHmzxJXKNfa6PjFhyQ==",
+      "set-cookie-parser@2.7.0": {
+        "integrity": "sha512-lXLOiqpkUumhRdFF3k1osNXCy9akgx/dyPZ5p8qAg9seJzXr5ZrlqZuWIMuY6ejOsVLE6flJ5/h3lsn57fQ/PQ==",
         "dependencies": {}
       },
       "shebang-command@2.0.0": {
@@ -1373,7 +1377,7 @@
   "workspace": {
     "dependencies": [
       "jsr:@cross/test@^0.0.9",
-      "jsr:@std/assert@^0.226.0",
+      "jsr:@std/assert@^1.0.0",
       "jsr:@std/testing@^0.225.3",
       "npm:@sveltejs/kit@^2.5.19",
       "npm:css-selector-extract@^4.0.1",
