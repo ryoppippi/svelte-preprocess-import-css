@@ -42,5 +42,10 @@
     "preprocess",
     "css",
     "import"
+  ],
+  "exclude": [
+    "test_project",
+    "__snapshots__",
+    "mod_test.ts"
   ]
 }
