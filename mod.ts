@@ -94,6 +94,7 @@ function matchAllImports(str: string) {
  */
 export function importCSSPreprocess(): PreprocessorGroup {
   return {
+    name: "import-css-scoped",
     style: async function ({ content, filename }) {
       const imports = matchAllImports(content);
       if (imports.length > 0) {
