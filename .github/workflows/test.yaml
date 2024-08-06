@@ -48,18 +48,9 @@ jobs:
         with:
           deno-version: v1.x
 
-      - name: Run test with coverage report
+      - name: Run test 
         shell: bash
-        run: |
-          deno task test:coverage
-          deno task coverage:lco
-          deno task coverage:show >> .coverage/result.txt
-
-      - name: Upload coverage report to Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: my-artifact
-          path: ./.coverage
+        run: deno task test
 
   coverage-report:
     needs:
