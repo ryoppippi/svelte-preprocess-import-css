@@ -49,13 +49,11 @@ async function getAbsPath(
     return path.resolve(dirname, file);
   }
 
-  for (const [_alias, _aliasPath] of Object.entries(aliases)) {
+  for (const [alias, aliasPath] of Object.entries(aliases)) {
     const addSlash = (str: string) => (str.endsWith("/") ? str : `${str}/`);
-    const alias = addSlash(_alias);
-    const aliasPath = addSlash(_aliasPath);
-    if (file.startsWith(alias)) {
+    if (file.startsWith(addSlash(alias)) || file === alias) {
       const s = new MagicString(file);
-      s.overwrite(0, alias.length, aliasPath);
+      s.overwrite(0, alias.length, addSlash(aliasPath));
       return path.resolve(s.toString());
     }
   }
