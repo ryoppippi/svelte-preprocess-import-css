@@ -8,6 +8,7 @@ import type { PreprocessorGroup } from "svelte/compiler";
 import type { Config as SvelteKitConfig } from "@sveltejs/kit";
 import type { UserConfig as ViteConfig } from "vite";
 import { loadConfig } from "unconfig";
+import { withTrailingSlash } from "ufo";
 
 async function loadAliases() {
   const { config } = await loadConfig({
@@ -50,10 +51,9 @@ async function getAbsPath(
   }
 
   for (const [alias, aliasPath] of Object.entries(aliases)) {
-    const addSlash = (str: string) => (str.endsWith("/") ? str : `${str}/`);
-    if (file.startsWith(addSlash(alias)) || file === alias) {
+    if (file.startsWith(withTrailingSlash(alias)) || file === alias) {
       const s = new MagicString(file);
-      s.overwrite(0, alias.length, addSlash(aliasPath));
+      s.overwrite(0, alias.length, withTrailingSlash(aliasPath));
       return path.resolve(s.toString());
     }
   }

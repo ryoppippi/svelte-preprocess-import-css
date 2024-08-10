@@ -21,6 +21,7 @@
       "npm:pathe@^1.1.2": "npm:pathe@1.1.2",
       "npm:query-string@^9.1.0": "npm:query-string@9.1.0",
       "npm:svelte@^4.2.18": "npm:svelte@4.2.18",
+      "npm:ufo@^1.5.4": "npm:ufo@1.5.4",
       "npm:unconfig@^0.5.5": "npm:unconfig@0.5.5",
       "npm:vite@^5.3.5": "npm:vite@5.3.5_@types+node@18.16.19"
     },
@@ -1322,6 +1323,10 @@
         "integrity": "sha512-Y7HYmWaFwPUmkoQCUIAYpKqkOf+SbVj/2fJJZ4RJMCfZp0rTGwRbzQD+HghfnhKOjL9E01okqz+ncJskGYfBNw==",
         "dependencies": {}
       },
+      "ufo@1.5.4": {
+        "integrity": "sha512-UsUk3byDzKd04EyoZ7U4DOlxQaD14JUKQl6/P7wiX4FNvUfm3XL246n9W5AmqwW5RSFJ27NAuM0iLscAOYUiGQ==",
+        "dependencies": {}
+      },
       "unconfig@0.5.5": {
         "integrity": "sha512-VQZ5PT9HDX+qag0XdgQi8tJepPhXiR/yVOkn707gJDKo31lGjRilPREiQJ9Z6zd/Ugpv6ZvO5VxVIcatldYcNQ==",
         "dependencies": {
@@ -1378,6 +1383,7 @@
       "npm:pathe@^1.1.2",
       "npm:query-string@^9.1.0",
       "npm:svelte@^4.2.18",
+      "npm:ufo@^1.5.4",
       "npm:unconfig@^0.5.5",
       "npm:vite@^5.3.5"
     ]
