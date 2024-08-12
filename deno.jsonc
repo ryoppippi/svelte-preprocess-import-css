@@ -1,6 +1,6 @@
 {
   "name": "@ryoppippi/svelte-preprocess-import-css",
-  "version": "0.0.0",
+  "version": "0.3.4",
   "tasks": {
     "dev": "deno run --watch mod.ts",
     "check": "deno check ./**/*.ts && deno fmt --check",
@@ -8,7 +8,8 @@
     "test": "deno test -A --parallel --doc",
     "test:coverage": "deno task test --coverage=.coverage",
     "coverage:show": "deno coverage .coverage",
-    "coverage:lco": "deno coverage --lcov .coverage > .coverage/lcov.info"
+    "coverage:lco": "deno coverage --lcov .coverage > .coverage/lcov.info",
+    "release": "deno run npm:bumpp"
   },
   "fmt": {
     "exclude": [
