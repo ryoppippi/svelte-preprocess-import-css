@@ -17,18 +17,18 @@
     ]
   },
   "imports": {
-    "@cross/test": "jsr:@cross/test@^0.0.9",
+    "@cross/test": "jsr:@cross/test@^0.0.10",
     "@std/assert": "jsr:@std/assert@^1.0.0",
     "@std/testing": "jsr:@std/testing@^1.0.0",
     "@sveltejs/kit": "npm:@sveltejs/kit@^2.5.19",
     "css-selector-extract": "npm:css-selector-extract@^4.0.1",
     "magic-string": "npm:magic-string@^0.30.11",
-    "pathe": "npm:pathe@^1.1.2",
+    "pathe": "npm:pathe@^2.0.0",
     "query-string": "npm:query-string@^9.1.0",
-    "svelte": "npm:svelte@^4.2.18",
+    "svelte": "npm:svelte@^5.0.0",
     "ufo": "npm:ufo@^1.5.4",
-    "unconfig": "npm:unconfig@^0.6.0",
-    "vite": "npm:vite@^5.3.5"
+    "unconfig": "npm:unconfig@^7.0.0",
+    "vite": "npm:vite@^6.0.0"
   },
   "exports": "./mod.ts",
   "publish": {
