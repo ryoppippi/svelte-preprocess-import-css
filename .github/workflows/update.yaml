@@ -19,7 +19,7 @@ jobs:
       - name: Setup Deno
         uses: denoland/setup-deno@v1
         with:
-          deno-version: 2.7.8
+          deno-version: 2.7.9
 
       - name: Update dependencies with molt
         id: run-deno-molt
