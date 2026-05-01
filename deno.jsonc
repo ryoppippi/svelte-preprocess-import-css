@@ -22,7 +22,7 @@
     "@std/testing": "jsr:@std/testing@^1.0.18",
     "@sveltejs/kit": "npm:@sveltejs/kit@^2.5.19",
     "css-selector-extract": "npm:css-selector-extract@^4.0.1",
-    "magic-string": "npm:magic-string@^0.30.11",
+    "magic-string": "npm:magic-string@^0.30.21",
     "pathe": "npm:pathe@^2.0.0",
     "query-string": "npm:query-string@^9.1.0",
     "svelte": "npm:svelte@^5.0.0",
