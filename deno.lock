@@ -15,7 +15,7 @@
     "npm:changelogithub@*": "0.13.7",
     "npm:cronstrue@*": "2.50.0",
     "npm:css-selector-extract@^4.0.1": "4.0.1",
-    "npm:magic-string@~0.30.11": "0.30.17",
+    "npm:magic-string@~0.30.21": "0.30.21",
     "npm:pathe@2": "2.0.3",
     "npm:pathe@^1.1.2": "1.1.2",
     "npm:query-string@^9.1.0": "9.1.2",
@@ -223,8 +223,8 @@
     "@jridgewell/set-array@1.2.1": {
       "integrity": "sha512-R8gLRTZeyp03ymzP/6Lil/28tGeGEzhx1q2k703KGWRAI1VdvPIXdG70VJc2pAMw3NA6JKL5hhFu1sJX0Mnn/A=="
     },
-    "@jridgewell/sourcemap-codec@1.5.0": {
-      "integrity": "sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ=="
+    "@jridgewell/sourcemap-codec@1.5.5": {
+      "integrity": "sha512-cYQ9310grqxueWbl+WuIUIaiUaDcj7WOq5fVhEljNVgRfOUhY9fy2zTvfoqWsnebh8Sl70VScFbICvJnLKB0Og=="
     },
     "@jridgewell/trace-mapping@0.3.25": {
       "integrity": "sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==",
@@ -385,7 +385,6 @@
         "debug",
         "deepmerge",
         "kleur",
-        "magic-string",
         "svelte",
         "vite",
         "vitefu"
@@ -815,8 +814,8 @@
     "locate-character@3.0.0": {
       "integrity": "sha512-SW13ws7BjaeJ6p7Q6CO2nchbYEc3X3J6WrmTTDto7yMPqVSZTUyY5Tjbid+Ab8gLnATtygYtiDIJGQRRn2ZOiA=="
     },
-    "magic-string@0.30.17": {
-      "integrity": "sha512-sNPKHvyjVf7gyjwS4xGTaW/mCnF8wnjtifKBEhxfZ7E/S8tQ0rssrwGNn6q8JH/ohItJfSQp9mBtQYuTlH5QnA==",
+    "magic-string@0.30.21": {
+      "integrity": "sha512-vd2F4YUyEXKGcLHoq+TEyCjxueSeHnFxyyjNp80yg0XV4vUhnDer/lvvlqM/arB5bXQN5K2/3oinyCRyx8T2CQ==",
       "dependencies": [
         "@jridgewell/sourcemap-codec"
       ]
@@ -1201,7 +1200,7 @@
       "jsr:@std/testing@^1.0.18",
       "npm:@sveltejs/kit@^2.5.19",
       "npm:css-selector-extract@^4.0.1",
-      "npm:magic-string@~0.30.11",
+      "npm:magic-string@~0.30.21",
       "npm:pathe@2",
       "npm:query-string@^9.1.0",
       "npm:svelte@5",
