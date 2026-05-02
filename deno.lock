@@ -20,7 +20,7 @@
     "npm:pathe@^2.0.3": "2.0.3",
     "npm:query-string@^9.3.1": "9.3.1",
     "npm:svelte@^5.55.5": "5.55.5",
-    "npm:ufo@^1.6.3": "1.6.4",
+    "npm:ufo@^1.6.4": "1.6.4",
     "npm:unconfig@7": "7.3.2",
     "npm:vite@6": "6.3.5_picomatch@4.0.2"
   },
@@ -1190,7 +1190,7 @@
       "npm:pathe@^2.0.3",
       "npm:query-string@^9.3.1",
       "npm:svelte@^5.55.5",
-      "npm:ufo@^1.6.3",
+      "npm:ufo@^1.6.4",
       "npm:unconfig@7",
       "npm:vite@6"
     ]
