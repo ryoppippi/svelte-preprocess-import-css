@@ -27,7 +27,7 @@
     "query-string": "npm:query-string@^9.3.1",
     "svelte": "npm:svelte@^5.55.5",
     "ufo": "npm:ufo@^1.6.4",
-    "unconfig": "npm:unconfig@^7.0.0",
+    "unconfig": "npm:unconfig@^7.5.0",
     "vite": "npm:vite@^6.0.0"
   },
   "exports": "./mod.ts",
