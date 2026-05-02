@@ -26,7 +26,7 @@
     "pathe": "npm:pathe@^2.0.3",
     "query-string": "npm:query-string@^9.3.1",
     "svelte": "npm:svelte@^5.55.5",
-    "ufo": "npm:ufo@^1.6.3",
+    "ufo": "npm:ufo@^1.6.4",
     "unconfig": "npm:unconfig@^7.0.0",
     "vite": "npm:vite@^6.0.0"
   },
