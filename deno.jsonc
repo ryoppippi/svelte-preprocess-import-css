@@ -20,7 +20,7 @@
     "@cross/test": "jsr:@cross/test@^0.0.14",
     "@std/assert": "jsr:@std/assert@^1.0.19",
     "@std/testing": "jsr:@std/testing@^1.0.18",
-    "@sveltejs/kit": "npm:@sveltejs/kit@^2.5.19",
+    "@sveltejs/kit": "npm:@sveltejs/kit@^2.58.0",
     "css-selector-extract": "npm:css-selector-extract@^4.0.1",
     "magic-string": "npm:magic-string@^0.30.21",
     "pathe": "npm:pathe@^2.0.3",
