@@ -18,7 +18,7 @@
     "npm:magic-string@~0.30.21": "0.30.21",
     "npm:pathe@^1.1.2": "1.1.2",
     "npm:pathe@^2.0.3": "2.0.3",
-    "npm:query-string@^9.1.0": "9.1.2",
+    "npm:query-string@^9.3.1": "9.3.1",
     "npm:svelte@5": "5.30.2_acorn@8.14.1",
     "npm:ufo@^1.6.3": "1.6.4",
     "npm:unconfig@7": "7.3.2",
@@ -965,8 +965,8 @@
     "quansync@0.2.10": {
       "integrity": "sha512-t41VRkMYbkHyCYmOvx/6URnN80H7k4X0lLdBMGsz+maAwrJQYB1djpV6vHrQIBE0WBSGqhtEHrK9U3DWWH8v7A=="
     },
-    "query-string@9.1.2": {
-      "integrity": "sha512-s3UlTyjxRux4KjwWaJsjh1Mp8zoCkSGKirbD9H89pEM9UOZsfpRZpdfzvsy2/mGlLfC3NnYVpy2gk7jXITHEtA==",
+    "query-string@9.3.1": {
+      "integrity": "sha512-5fBfMOcDi5SA9qj5jZhWAcTtDfKF5WFdd2uD9nVNlbxVv1baq65aALy6qofpNEGELHvisjjasxQp7BlM9gvMzw==",
       "dependencies": [
         "decode-uri-component",
         "filter-obj",
@@ -1186,7 +1186,7 @@
       "npm:css-selector-extract@^4.0.1",
       "npm:magic-string@~0.30.21",
       "npm:pathe@^2.0.3",
-      "npm:query-string@^9.1.0",
+      "npm:query-string@^9.3.1",
       "npm:svelte@5",
       "npm:ufo@^1.6.3",
       "npm:unconfig@7",
