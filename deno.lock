@@ -11,7 +11,7 @@
     "jsr:@std/internal@^1.0.13": "1.0.13",
     "jsr:@std/path@^1.1.4": "1.1.4",
     "jsr:@std/testing@^1.0.18": "1.0.18",
-    "npm:@sveltejs/kit@^2.58.0": "2.59.0_svelte@5.55.5_vite@6.3.5__picomatch@4.0.2",
+    "npm:@sveltejs/kit@^2.58.0": "2.59.0_svelte@5.55.5_vite@6.4.2",
     "npm:changelogithub@*": "0.13.7",
     "npm:cronstrue@*": "2.50.0",
     "npm:css-selector-extract@^4.0.1": "4.0.1",
@@ -22,7 +22,7 @@
     "npm:svelte@^5.55.5": "5.55.5",
     "npm:ufo@^1.6.4": "1.6.4",
     "npm:unconfig@^7.5.0": "7.5.0",
-    "npm:vite@6": "6.3.5_picomatch@4.0.2"
+    "npm:vite@^6.4.2": "6.4.2"
   },
   "jsr": {
     "@cross/runtime@1.0.0": {
@@ -351,7 +351,7 @@
         "acorn"
       ]
     },
-    "@sveltejs/kit@2.59.0_svelte@5.55.5_vite@6.3.5__picomatch@4.0.2": {
+    "@sveltejs/kit@2.59.0_svelte@5.55.5_vite@6.4.2": {
       "integrity": "sha512-WeJaGKvDf3uVQB4bnDHhM+BXCY34LC1v0HiPqnSpvNkjB54r8DAUP1rpk73s+5zprIirEKtUcVfgh6+fPODjzQ==",
       "dependencies": [
         "@standard-schema/spec",
@@ -368,7 +368,7 @@
         "set-cookie-parser",
         "sirv",
         "svelte",
-        "vite"
+        "vite@6.4.2"
       ],
       "bin": true
     },
@@ -379,7 +379,7 @@
         "magic-string",
         "obug",
         "svelte",
-        "vite",
+        "vite@6.3.5_picomatch@4.0.2",
         "vitefu"
       ]
     },
@@ -1160,13 +1160,28 @@
       ],
       "bin": true
     },
+    "vite@6.4.2": {
+      "integrity": "sha512-2N/55r4JDJ4gdrCvGgINMy+HH3iRpNIz8K6SFwVsA+JbQScLiC+clmAxBgwiSPgcG9U15QmvqCGWzMbqda5zGQ==",
+      "dependencies": [
+        "esbuild",
+        "fdir",
+        "picomatch@4.0.2",
+        "postcss",
+        "rollup",
+        "tinyglobby"
+      ],
+      "optionalDependencies": [
+        "fsevents"
+      ],
+      "bin": true
+    },
     "vitefu@1.1.3_vite@6.3.5__picomatch@4.0.2": {
       "integrity": "sha512-ub4okH7Z5KLjb6hDyjqrGXqWtWvoYdU3IGm/NorpgHncKoLTCfRIbvlhBm7r0YstIaQRYlp4yEbFqDcKSzXSSg==",
       "dependencies": [
-        "vite"
+        "vite@6.3.5_picomatch@4.0.2"
       ],
       "optionalPeers": [
-        "vite"
+        "vite@6.3.5_picomatch@4.0.2"
       ]
     },
     "which@2.0.2": {
@@ -1200,7 +1215,7 @@
       "npm:svelte@^5.55.5",
       "npm:ufo@^1.6.4",
       "npm:unconfig@^7.5.0",
-      "npm:vite@6"
+      "npm:vite@^6.4.2"
     ]
   }
 }
