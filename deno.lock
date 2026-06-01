@@ -19,7 +19,7 @@
     "npm:pathe@^1.1.2": "1.1.2",
     "npm:pathe@^2.0.3": "2.0.3",
     "npm:query-string@^9.4.0": "9.4.0",
-    "npm:svelte@^5.55.10": "5.56.0",
+    "npm:svelte@^5.56.0": "5.56.0",
     "npm:ufo@^1.6.4": "1.6.4",
     "npm:unconfig@^7.5.0": "7.5.0",
     "npm:vite@^8.0.14": "8.0.14"
@@ -1132,7 +1132,7 @@
       "npm:magic-string@~0.30.21",
       "npm:pathe@^2.0.3",
       "npm:query-string@^9.4.0",
-      "npm:svelte@^5.55.10",
+      "npm:svelte@^5.56.0",
       "npm:ufo@^1.6.4",
       "npm:unconfig@^7.5.0",
       "npm:vite@^8.0.14"
