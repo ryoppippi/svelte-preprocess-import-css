@@ -11,7 +11,7 @@
     "jsr:@std/internal@^1.0.14": "1.0.14",
     "jsr:@std/path@^1.1.5": "1.1.5",
     "jsr:@std/testing@^1.0.19": "1.0.19",
-    "npm:@sveltejs/kit@^2.63.0": "2.63.0_@sveltejs+vite-plugin-svelte@7.1.2__svelte@5.56.2__vite@8.0.16_svelte@5.56.2_vite@8.0.16",
+    "npm:@sveltejs/kit@^2.63.0": "2.63.0_svelte@5.56.3_vite@8.0.16",
     "npm:changelogithub@*": "0.13.7",
     "npm:cronstrue@*": "2.50.0",
     "npm:css-selector-extract@^4.0.1": "4.0.1",
@@ -19,7 +19,7 @@
     "npm:pathe@^1.1.2": "1.1.2",
     "npm:pathe@^2.0.3": "2.0.3",
     "npm:query-string@^9.4.0": "9.4.0",
-    "npm:svelte@^5.56.2": "5.56.2",
+    "npm:svelte@^5.56.3": "5.56.3",
     "npm:ufo@^1.6.4": "1.6.4",
     "npm:unconfig@^7.5.0": "7.5.0",
     "npm:vite@^8.0.16": "8.0.16"
@@ -238,7 +238,7 @@
         "acorn"
       ]
     },
-    "@sveltejs/kit@2.63.0_@sveltejs+vite-plugin-svelte@7.1.2__svelte@5.56.2__vite@8.0.16_svelte@5.56.2_vite@8.0.16": {
+    "@sveltejs/kit@2.63.0_svelte@5.56.3_vite@8.0.16": {
       "integrity": "sha512-1DrR7vQ9brXLrNE2sLtFXApwr7AUXPfpbIFYc+CQRf2+iURaZbXGU+7TG/RLr+9fdFkoRdyCAVUOHCChw11LFA==",
       "dependencies": [
         "@standard-schema/spec",
@@ -259,7 +259,7 @@
       ],
       "bin": true
     },
-    "@sveltejs/vite-plugin-svelte@7.1.2_svelte@5.56.2_vite@8.0.16": {
+    "@sveltejs/vite-plugin-svelte@7.1.2_svelte@5.56.3_vite@8.0.16": {
       "integrity": "sha512-DrUBA2UXRfDmUX/ZTiEopd3X40yavsJF1FX2RygcuIScHL7o5YX1fMvoYnDhjeJQC4weCOklirpNWlcb2NiSeA==",
       "dependencies": [
         "deepmerge",
@@ -1003,8 +1003,8 @@
     "strip-final-newline@3.0.0": {
       "integrity": "sha512-dOESqjYr96iWYylGObzd39EuNTa5VJxyvVAEm5Jnh7KGo75V43Hk1odPQkNDyXNmUR6k+gEiDVXnjB8HJ3crXw=="
     },
-    "svelte@5.56.2": {
-      "integrity": "sha512-1lDf8TLqpxyAt3xgybfytWPJQbaUD6TiDgpiCLH0BKrKEwzecB9pjuNVnEJMpzH018xUzo6oxheK2HT0oa2RoQ==",
+    "svelte@5.56.3": {
+      "integrity": "sha512-w7JvrM5IFl5cmfbY0TLik9o7mjRUJmRMhOR51tBPu708Gr/MjbGs7VnJnr/B0CaXeI4vtnOh7RKxDr0cwhMdDA==",
       "dependencies": [
         "@jridgewell/remapping",
         "@jridgewell/sourcemap-codec",
@@ -1132,7 +1132,7 @@
       "npm:magic-string@~0.30.21",
       "npm:pathe@^2.0.3",
       "npm:query-string@^9.4.0",
-      "npm:svelte@^5.56.2",
+      "npm:svelte@^5.56.3",
       "npm:ufo@^1.6.4",
       "npm:unconfig@^7.5.0",
       "npm:vite@^8.0.16"
