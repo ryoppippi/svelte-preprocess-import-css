@@ -11,7 +11,7 @@
     "jsr:@std/internal@^1.0.14": "1.0.14",
     "jsr:@std/path@^1.1.5": "1.1.5",
     "jsr:@std/testing@^1.0.19": "1.0.19",
-    "npm:@sveltejs/kit@^2.66.0": "2.66.0_@sveltejs+vite-plugin-svelte@7.1.2__svelte@5.56.3__vite@8.0.16_svelte@5.56.3_vite@8.0.16",
+    "npm:@sveltejs/kit@^2.67.0": "2.68.0_@sveltejs+vite-plugin-svelte@7.1.2__svelte@5.56.3__vite@8.0.16_svelte@5.56.3_vite@8.0.16",
     "npm:changelogithub@*": "0.13.7",
     "npm:cronstrue@*": "2.50.0",
     "npm:css-selector-extract@^4.0.1": "4.0.1",
@@ -238,8 +238,8 @@
         "acorn"
       ]
     },
-    "@sveltejs/kit@2.66.0_@sveltejs+vite-plugin-svelte@7.1.2__svelte@5.56.3__vite@8.0.16_svelte@5.56.3_vite@8.0.16": {
-      "integrity": "sha512-7nN4Ur4+nofZ36DVo83JbRe02m61Vc+I441mML/DYa1pUTZ/x26+lbrdqPen8gjmsUc6flMtHEqAtn0UfmfvAw==",
+    "@sveltejs/kit@2.68.0_@sveltejs+vite-plugin-svelte@7.1.2__svelte@5.56.3__vite@8.0.16_svelte@5.56.3_vite@8.0.16": {
+      "integrity": "sha512-PdKiWsqinAoubVsSiRgVFkg3MHzGhQPnwQ8VxnGQKpZYijpapZ3UHHBje0GeByt2TvfjHPw+kxV+dNK2RIZg9g==",
       "dependencies": [
         "@standard-schema/spec",
         "@sveltejs/acorn-typescript",
@@ -962,8 +962,8 @@
       "integrity": "sha512-FNAIBWCx9qcRhoHcgcJ0gvU7SN1lYU2ZXuSfl04bSC5OpvDHFyJCjdNHomPXxjQlCBU67YW64PzY7/VIEH7F2w==",
       "bin": true
     },
-    "set-cookie-parser@3.1.0": {
-      "integrity": "sha512-kjnC1DXBHcxaOaOXBHBeRtltsDG2nUiUni+jP92M9gYdW12rsmx92UsfpH7o5tDRs7I1ZZPSQJQGv3UaRfCiuw=="
+    "set-cookie-parser@3.1.1": {
+      "integrity": "sha512-vM9SUhjsUYs6UeJUmygc5Ofm5eQGe85riob5ju6XCgFGJI5PLV4nrDAQpQjd+LkFBpAkADn5BQQpZ9EUNkyLuA=="
     },
     "shebang-command@2.0.0": {
       "integrity": "sha512-kHxr2zZpYtdmrN1qDjrrX/Z1rR1kG8Dx+gkpK1G4eXmvXswmcE1hTWBWYUzlraYw1/yZp6YuDY77YtvbN0dmDA==",
@@ -1127,7 +1127,7 @@
       "jsr:@cross/test@^0.0.14",
       "jsr:@std/assert@^1.0.19",
       "jsr:@std/testing@^1.0.19",
-      "npm:@sveltejs/kit@^2.66.0",
+      "npm:@sveltejs/kit@^2.67.0",
       "npm:css-selector-extract@^4.0.1",
       "npm:magic-string@~0.30.21",
       "npm:pathe@^2.0.3",
