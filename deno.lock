@@ -15,7 +15,7 @@
     "npm:changelogithub@*": "0.13.7",
     "npm:cronstrue@*": "2.50.0",
     "npm:css-selector-extract@^4.0.1": "4.0.1",
-    "npm:magic-string@~0.30.21": "0.30.21",
+    "npm:magic-string@1": "1.0.0",
     "npm:pathe@^1.1.2": "1.1.2",
     "npm:pathe@^2.0.3": "2.0.3",
     "npm:query-string@^9.4.1": "9.4.1",
@@ -250,7 +250,7 @@
         "devalue",
         "esm-env",
         "kleur",
-        "magic-string",
+        "magic-string@0.30.21",
         "mrmime",
         "set-cookie-parser",
         "sirv",
@@ -263,7 +263,7 @@
       "integrity": "sha512-1SpkuMSRLfugrVX+IrKfE1RUegzo8AQzKQ6qQPfVzbcWi5IhuTPaKb5ZrLpucleFznkc4/RTeSPoRnGWFxX+EQ==",
       "dependencies": [
         "deepmerge",
-        "magic-string",
+        "magic-string@0.30.21",
         "obug",
         "svelte",
         "vite",
@@ -748,6 +748,12 @@
         "@jridgewell/sourcemap-codec"
       ]
     },
+    "magic-string@1.0.0": {
+      "integrity": "sha512-CGvjzMN08iv6w1mm4/x3Gh1hLb4VnyRUA15FFpl6CsCIGGoe36k7kY5KNz9QDbSBN5I/fWHM6ZlIkUTa5xdUEA==",
+      "dependencies": [
+        "@jridgewell/sourcemap-codec"
+      ]
+    },
     "merge-stream@2.0.0": {
       "integrity": "sha512-abv/qOcuPfk3URPfDzmZU1LKmuw8kT+0nIHvKrKgFrwifol/doWcdA4ZqsWQ8ENrFKkd67Mfpo/LovbIUsbt3w=="
     },
@@ -1020,7 +1026,7 @@
         "esrap",
         "is-reference",
         "locate-character",
-        "magic-string",
+        "magic-string@0.30.21",
         "zimmerframe"
       ]
     },
@@ -1129,7 +1135,7 @@
       "jsr:@std/testing@^1.0.19",
       "npm:@sveltejs/kit@^2.69.3",
       "npm:css-selector-extract@^4.0.1",
-      "npm:magic-string@~0.30.21",
+      "npm:magic-string@1",
       "npm:pathe@^2.0.3",
       "npm:query-string@^9.4.1",
       "npm:svelte@^5.56.5",
