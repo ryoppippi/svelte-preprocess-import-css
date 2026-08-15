@@ -12,7 +12,7 @@
     "jsr:@std/path@^1.1.5": "1.1.6",
     "jsr:@std/path@^1.1.6": "1.1.6",
     "jsr:@std/testing@^1.0.20": "1.0.20",
-    "npm:@sveltejs/kit@^2.70.2": "2.70.2_svelte@5.56.8_vite@8.2.1",
+    "npm:@sveltejs/kit@^2.70.2": "2.70.2_svelte@5.56.9_vite@8.2.1",
     "npm:changelogithub@*": "0.13.7",
     "npm:cronstrue@*": "2.50.0",
     "npm:css-selector-extract@^4.0.1": "4.0.1",
@@ -20,7 +20,7 @@
     "npm:pathe@^1.1.2": "1.1.2",
     "npm:pathe@^2.0.3": "2.0.3",
     "npm:query-string@^9.5.0": "9.5.0",
-    "npm:svelte@^5.56.8": "5.56.8",
+    "npm:svelte@^5.56.9": "5.56.9",
     "npm:ufo@^1.6.4": "1.6.4",
     "npm:unconfig@^7.5.0": "7.5.0",
     "npm:vite@^8.2.1": "8.2.1"
@@ -238,7 +238,7 @@
         "acorn"
       ]
     },
-    "@sveltejs/kit@2.70.2_svelte@5.56.8_vite@8.2.1": {
+    "@sveltejs/kit@2.70.2_svelte@5.56.9_vite@8.2.1": {
       "integrity": "sha512-RzRoRpuR2KXqc5yMO0akQHDZeT4AslOlznGITURsqHaVbtyYP4Wn3eE3gxj9JcDyNYO0crkxhdwFHc+2vkVm6w==",
       "dependencies": [
         "@standard-schema/spec",
@@ -259,7 +259,7 @@
       ],
       "bin": true
     },
-    "@sveltejs/vite-plugin-svelte@7.2.0_svelte@5.56.8_vite@8.2.1": {
+    "@sveltejs/vite-plugin-svelte@7.2.0_svelte@5.56.9_vite@8.2.1": {
       "integrity": "sha512-1SpkuMSRLfugrVX+IrKfE1RUegzo8AQzKQ6qQPfVzbcWi5IhuTPaKb5ZrLpucleFznkc4/RTeSPoRnGWFxX+EQ==",
       "dependencies": [
         "deepmerge",
@@ -1009,8 +1009,8 @@
     "strip-final-newline@3.0.0": {
       "integrity": "sha512-dOESqjYr96iWYylGObzd39EuNTa5VJxyvVAEm5Jnh7KGo75V43Hk1odPQkNDyXNmUR6k+gEiDVXnjB8HJ3crXw=="
     },
-    "svelte@5.56.8": {
-      "integrity": "sha512-PY8LOw7xP6c8IOiVqdo0sbbZVYhXRSfklOQLAUyGBKqjTX0wx/z4l/9J+PmBpmlLnxzEb1NqltxQ5/wZme/Cmg==",
+    "svelte@5.56.9": {
+      "integrity": "sha512-VT8kSnlEg8069w7AiCcAk3Yf5xvMnrGTagVOmU/OpOLHaHnNqXhWZCH/4EVga/bT/HtWhvE6/fHrXLErx7OnJA==",
       "dependencies": [
         "@jridgewell/remapping",
         "@jridgewell/sourcemap-codec",
@@ -1138,7 +1138,7 @@
       "npm:magic-string@^1.1.1",
       "npm:pathe@^2.0.3",
       "npm:query-string@^9.5.0",
-      "npm:svelte@^5.56.8",
+      "npm:svelte@^5.56.9",
       "npm:ufo@^1.6.4",
       "npm:unconfig@^7.5.0",
       "npm:vite@^8.2.1"
