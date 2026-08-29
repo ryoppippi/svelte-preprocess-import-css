@@ -16,7 +16,7 @@
     "npm:changelogithub@*": "0.13.7",
     "npm:cronstrue@*": "2.50.0",
     "npm:css-selector-extract@^4.0.1": "4.0.1",
-    "npm:magic-string@^1.2.2": "1.2.2",
+    "npm:magic-string@^1.2.3": "1.2.3",
     "npm:pathe@^1.1.2": "1.1.2",
     "npm:pathe@^2.0.3": "2.0.3",
     "npm:query-string@^9.5.0": "9.5.0",
@@ -711,8 +711,8 @@
         "@jridgewell/sourcemap-codec"
       ]
     },
-    "magic-string@1.2.2": {
-      "integrity": "sha512-veT/+7iXrXzT39XnEN4lOxtNl72dMgJ8Lp+5Bd6YcMSWpb0n0MjBM8Uuooi6jgJr8dhUW2swQgBmoZVMni5SVg==",
+    "magic-string@1.2.3": {
+      "integrity": "sha512-Bpb0W2TbLKOZ7vJnOUnVRGq3WL2p+ISV29M6hYPL1AFCpyKZpdr5ytiXoTSSxRVhg8YW7f65+6gbG8WG6PCa/g==",
       "dependencies": [
         "@jridgewell/sourcemap-codec"
       ]
@@ -1095,7 +1095,7 @@
       "jsr:@std/testing@^1.0.20",
       "npm:@sveltejs/kit@^2.70.3",
       "npm:css-selector-extract@^4.0.1",
-      "npm:magic-string@^1.2.2",
+      "npm:magic-string@^1.2.3",
       "npm:pathe@^2.0.3",
       "npm:query-string@^9.5.0",
       "npm:svelte@^5.56.10",
