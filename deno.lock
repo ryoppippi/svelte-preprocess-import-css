@@ -12,7 +12,7 @@
     "jsr:@std/path@^1.1.5": "1.1.6",
     "jsr:@std/path@^1.1.6": "1.1.6",
     "jsr:@std/testing@^1.0.20": "1.0.20",
-    "npm:@sveltejs/kit@^2.70.3": "2.70.3_svelte@5.57.0_vite@8.3.0",
+    "npm:@sveltejs/kit@^2.70.3": "2.70.3_svelte@5.57.1_vite@8.3.0",
     "npm:changelogithub@*": "0.13.7",
     "npm:cronstrue@*": "2.50.0",
     "npm:css-selector-extract@^4.0.1": "4.0.1",
@@ -20,7 +20,7 @@
     "npm:pathe@^1.1.2": "1.1.2",
     "npm:pathe@^2.0.3": "2.0.3",
     "npm:query-string@^9.5.1": "9.5.1",
-    "npm:svelte@^5.57.0": "5.57.0",
+    "npm:svelte@^5.57.1": "5.57.1",
     "npm:ufo@^1.6.4": "1.6.4",
     "npm:unconfig@^7.5.0": "7.5.0",
     "npm:vite@^8.3.0": "8.3.0"
@@ -202,13 +202,13 @@
     "@standard-schema/spec@1.1.0": {
       "integrity": "sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w=="
     },
-    "@sveltejs/acorn-typescript@1.0.10_acorn@8.18.0": {
-      "integrity": "sha512-4WfKk68eTih+MiJD4fSbxN7E8kVBmTMPWHUPYjvl2N0rMs53YLTT8/YjKU5Dtnz5LqDjl7LEw4U7lXR2W3J5WA==",
+    "@sveltejs/acorn-typescript@1.0.13_acorn@8.18.0": {
+      "integrity": "sha512-wgKggnhZVL9Bfx1OaKKTrYY9BFRk6C8UAkQNUcIv1+llzYrIqy+RZm5HPKzn0NpEBvTVhTqB4kQyllZywsRBRQ==",
       "dependencies": [
         "acorn"
       ]
     },
-    "@sveltejs/kit@2.70.3_svelte@5.57.0_vite@8.3.0": {
+    "@sveltejs/kit@2.70.3_svelte@5.57.1_vite@8.3.0": {
       "integrity": "sha512-UDvEYuZqAMbfB/oXIoqKvbKcb7YczK5zYrzmsGV1zRJk03jntwp8dXiYoIJotxAndsKvcPFtx9H1GRSKFdSHgg==",
       "dependencies": [
         "@standard-schema/spec",
@@ -229,7 +229,7 @@
       ],
       "bin": true
     },
-    "@sveltejs/vite-plugin-svelte@7.3.0_svelte@5.57.0_vite@8.3.0": {
+    "@sveltejs/vite-plugin-svelte@7.3.0_svelte@5.57.1_vite@8.3.0": {
       "integrity": "sha512-QbRoJyD92e9R0ufeQIWRHrCC0ObcqSv/aBDdrQMoU+sypav3cDx5wytdQ6GLdXjEMO6xjrXGzfkUygng8JMv0A==",
       "dependencies": [
         "deepmerge",
@@ -242,8 +242,8 @@
     "@types/cookie@0.6.0": {
       "integrity": "sha512-4Kh9a6B2bQciAhf7FSuMRRkUWecJgJu9nPnx3yzpsfXX/c50REIqpHY4C82bXP90qrLtXtkDxTZosYO3UpOwlA=="
     },
-    "@types/estree@1.0.7": {
-      "integrity": "sha512-w28IoSUCJpidD/TGviZwwMJckNESJZXFu7NBZ5YJ4mEUnNraUn9Pm8HSZm/jDF1pDWYKspWE7oVphigUPRakIQ=="
+    "@types/estree@1.0.9": {
+      "integrity": "sha512-GhdPgy1el4/ImP05X05Uw4cw2/M93BCUmnEvWZNStlCzEKME4Fkk+YpoA5OiHNQmoS7Cafb8Xa3Pya8m1Qrzeg=="
     },
     "acorn@8.18.0": {
       "integrity": "sha512-lGq+9yr1/GuAWaVYIHRjvvySG5/4VfKIvC8EWxStPdcDh/Ka7FG3twP6v4d5BkravUilhIAsG4Qj83t02LWUPQ==",
@@ -436,8 +436,8 @@
     "detect-libc@2.1.2": {
       "integrity": "sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ=="
     },
-    "devalue@5.8.1": {
-      "integrity": "sha512-4CXDYRBGqN+57wVJkuXBYmpAVUSg3L6JAQa/DFqm238G73E1wuyc/JhGQJzN7vUf/CMphYau2zXbfWzDR5aTEw=="
+    "devalue@5.9.4": {
+      "integrity": "sha512-sPAT4pztbu6586/hrhOnMKS17IJrvg12mXiSPSS3W5qDeN2RGgvZ0diZCm31dBbnevfVmujNO3IM2wrS4Y2Rhg=="
     },
     "dotenv@16.4.5": {
       "integrity": "sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg=="
@@ -445,8 +445,8 @@
     "esm-env@1.2.2": {
       "integrity": "sha512-Epxrv+Nr/CaL4ZcFGPJIYLWFom+YeV1DqMLHJoEd9SYRxNbaFruBwfEX/kkHUJf55j2+TUbmDcmuilbP1TmXHA=="
     },
-    "esrap@2.2.12": {
-      "integrity": "sha512-On0QbLyaiAkVC4eXtgnXK9Kh2opit+3rcUSOc45DqJ2s/X2eXAHsGOKRSJ6IDagQEW5vPyivANfXUiqgXC67Rw==",
+    "esrap@2.3.7": {
+      "integrity": "sha512-n2nf7fZR3c9yXf0BPEuHuXqT+KW0SJVj4cN5FMEkpCZ3scLjOQWpiccyCxVzCC2q1wubTghuEGzngJY/7Ah0Ow==",
       "dependencies": [
         "@jridgewell/sourcemap-codec"
       ]
@@ -969,8 +969,8 @@
     "strip-final-newline@3.0.0": {
       "integrity": "sha512-dOESqjYr96iWYylGObzd39EuNTa5VJxyvVAEm5Jnh7KGo75V43Hk1odPQkNDyXNmUR6k+gEiDVXnjB8HJ3crXw=="
     },
-    "svelte@5.57.0": {
-      "integrity": "sha512-NdbDn7fl4be1ViUG0oq/lvG6OZy3oENolV2ONjiqqsfVoeAfzaQAKUcEX3MrQod/Bebv1PgwET9rfXhgn9s4Kg==",
+    "svelte@5.57.1": {
+      "integrity": "sha512-Uqj49lWKB+iSSnneuwiYYJ7MZgkB+eXr0LXBhv4uDuAkXqnWmq65Sxflfvp0Lc6MdKjMUxGaeOKWJqz5SNiVIA==",
       "dependencies": [
         "@jridgewell/remapping",
         "@jridgewell/sourcemap-codec",
@@ -1094,7 +1094,7 @@
       "npm:magic-string@^1.4.1",
       "npm:pathe@^2.0.3",
       "npm:query-string@^9.5.1",
-      "npm:svelte@^5.57.0",
+      "npm:svelte@^5.57.1",
       "npm:ufo@^1.6.4",
       "npm:unconfig@^7.5.0",
       "npm:vite@^8.3.0"
