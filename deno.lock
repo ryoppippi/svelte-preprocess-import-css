@@ -12,7 +12,7 @@
     "jsr:@std/path@^1.1.5": "1.1.6",
     "jsr:@std/path@^1.1.6": "1.1.6",
     "jsr:@std/testing@^1.0.21": "1.0.21",
-    "npm:@sveltejs/kit@^2.70.3": "2.70.3_svelte@5.57.1_vite@8.3.1",
+    "npm:@sveltejs/kit@^2.70.3": "2.70.3_svelte@5.57.1_vite@8.3.2",
     "npm:changelogithub@*": "0.13.7",
     "npm:cronstrue@*": "2.50.0",
     "npm:css-selector-extract@^4.0.1": "4.0.1",
@@ -23,7 +23,7 @@
     "npm:svelte@^5.57.1": "5.57.1",
     "npm:ufo@^1.6.4": "1.6.4",
     "npm:unconfig@^7.5.0": "7.5.0",
-    "npm:vite@^8.3.1": "8.3.1"
+    "npm:vite@^8.3.2": "8.3.2"
   },
   "jsr": {
     "@cross/runtime@1.0.0": {
@@ -208,7 +208,7 @@
         "acorn"
       ]
     },
-    "@sveltejs/kit@2.70.3_svelte@5.57.1_vite@8.3.1": {
+    "@sveltejs/kit@2.70.3_svelte@5.57.1_vite@8.3.2": {
       "integrity": "sha512-UDvEYuZqAMbfB/oXIoqKvbKcb7YczK5zYrzmsGV1zRJk03jntwp8dXiYoIJotxAndsKvcPFtx9H1GRSKFdSHgg==",
       "dependencies": [
         "@standard-schema/spec",
@@ -229,7 +229,7 @@
       ],
       "bin": true
     },
-    "@sveltejs/vite-plugin-svelte@7.3.0_svelte@5.57.1_vite@8.3.1": {
+    "@sveltejs/vite-plugin-svelte@7.3.0_svelte@5.57.1_vite@8.3.2": {
       "integrity": "sha512-QbRoJyD92e9R0ufeQIWRHrCC0ObcqSv/aBDdrQMoU+sypav3cDx5wytdQ6GLdXjEMO6xjrXGzfkUygng8JMv0A==",
       "dependencies": [
         "deepmerge",
@@ -1043,8 +1043,8 @@
     "untildify@4.0.0": {
       "integrity": "sha512-KK8xQ1mkzZeg9inewmFVDNkg3l5LUhoq9kN6iWYB/CC9YMG8HA+c1Q8HwDe6dEX7kErrEVNVBO3fWsVq5iDgtw=="
     },
-    "vite@8.3.1": {
-      "integrity": "sha512-/bvH9E9tmCXRGp2uXY3WbOldqpTwFkbha/8ANaEQ6VkxhH60KyqLwgZq6lG2y+4uT55x9+9eUHMpQ7uGnOCKjA==",
+    "vite@8.3.2": {
+      "integrity": "sha512-SQr1x6W5vVSbROg7vsyXIaxK9b0G7zsT68acdWWRmnBUsgDieLCRG+Rep9WdZgcposvv/GSnr4GUUBqB3vXq6w==",
       "dependencies": [
         "lightningcss",
         "picomatch@4.0.7",
@@ -1057,7 +1057,7 @@
       ],
       "bin": true
     },
-    "vitefu@1.1.3_vite@8.3.1": {
+    "vitefu@1.1.3_vite@8.3.2": {
       "integrity": "sha512-ub4okH7Z5KLjb6hDyjqrGXqWtWvoYdU3IGm/NorpgHncKoLTCfRIbvlhBm7r0YstIaQRYlp4yEbFqDcKSzXSSg==",
       "dependencies": [
         "vite"
@@ -1097,7 +1097,7 @@
       "npm:svelte@^5.57.1",
       "npm:ufo@^1.6.4",
       "npm:unconfig@^7.5.0",
-      "npm:vite@^8.3.1"
+      "npm:vite@^8.3.2"
     ]
   }
 }
