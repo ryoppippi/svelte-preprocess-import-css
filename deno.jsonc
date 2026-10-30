@@ -25,7 +25,7 @@
     "magic-string": "npm:magic-string@^1.4.4",
     "pathe": "npm:pathe@^2.0.3",
     "query-string": "npm:query-string@^10.0.0",
-    "svelte": "npm:svelte@^5.57.2",
+    "svelte": "npm:svelte@^5.57.3",
     "ufo": "npm:ufo@^1.6.4",
     "unconfig": "npm:unconfig@^7.5.0",
     "vite": "npm:vite@^8.3.5"
