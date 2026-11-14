@@ -23,7 +23,7 @@
     "npm:svelte@^5.57.3": "5.57.3",
     "npm:ufo@^1.6.4": "1.6.4",
     "npm:unconfig@^7.5.0": "7.5.0",
-    "npm:vite@^8.3.7": "8.3.8"
+    "npm:vite@^8.3.8": "8.3.8"
   },
   "jsr": {
     "@cross/runtime@1.0.0": {
@@ -1128,7 +1128,7 @@
       "npm:svelte@^5.57.3",
       "npm:ufo@^1.6.4",
       "npm:unconfig@^7.5.0",
-      "npm:vite@^8.3.7"
+      "npm:vite@^8.3.8"
     ]
   }
 }
